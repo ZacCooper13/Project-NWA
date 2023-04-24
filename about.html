@@ -1,0 +1,221 @@
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+<!-- Background & animion & navbar & title -->
+  <div class="container-fluid">
+<!-- Background animtion-->
+    <div class="background">
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
+<!-- header -->
+   <header>
+<!-- navbar -->
+     <nav>
+        <ul>
+           <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="staff.html">Admissions</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><a href="signup.html">Log In</a></li>
+         </ul>
+       </nav>
+       <!-- logo -->
+      <div class="logo"><span>N</span></div>
+<!-- title & content -->
+      <section class="header-content">
+
+      <h1>About Us</h1>
+         
+        <p> Welcome To Our Page, We Are Here To Help Make Your Child's Future The Best It Can Be.
+    
+        </p><br>
+          <div class="DressCode"><h2>Dress Code</h2><div class="WhoWeAre">
+          <h2><b>Our Mission</b></h2></div><hr></text-align: margin-left>
+          <p>What we require our students to wear:</p><div class="mission">
+            <p><b>Here at NWA we aim to provide the best education possible for our children.<br>We offer a wide variety of different carrer paths to guarantee kids the best option for them.</b></p></div>
+          <div style= position:center; border:5px solid #caae10; text-align:center; width:30%><h3>Males:</h3>
+          <li>Button up Shirt with tie or bow tie</li>
+          </p>  
+          <li>Khaki Pants</li>
+        </p>
+          <li>Dress Shoes</li>
+        </p>
+          <li>No Piercings</li>
+        </p>
+         
+          <h3>Females:</h3>
+          <li>Button up shirts with bow tie</li>
+        </p>
+          <li>Khaki Skirts</li>
+        </p>
+          <li>No Piercings</li>
+        </p>
+          <li>Dress Shoes</li>
+        </div>
+
+
+      </section>
+  </header>
+<style>
+   body {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+}
+ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+}
+  .OurMission {
+    text-align: left;
+    color:gold;
+  }  
+  .DressCode {
+    text-align: center;
+    margin: 30px;
+    color:gold;
+  }  
+
+  .WhoWeAre {
+    text-align: right;
+    margin:30px;
+    color: gold;
+  }
+.container-fluid{
+  height: 140%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #591BC5;
+}
+/* ============= Animation background ========= */
+.background {
+  background: linear-gradient(132deg, #7d02b2, #591BC5, #212335);
+  background-size: 600% 600%;
+  animation: Gradient 15s ease infinite;
+  position: elative;
+  height: 170rvh;
+  width: 100%;
+  overflow: hidden;
+  padding:0;
+  margin:0px;
+}
+/* ================= Header ============ */
+header{
+  position: absolute;
+  top:0%;
+  left: 0%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+/* navbar */
+nav{
+  color: #FFF;
+  float: right;
+  margin:40px 100px;
+}
+nav ul{
+  list-style: none;
+}
+nav ul li {
+  float: left;
+  transition: .3s;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #EFEEF5;
+  transition: .5;
+  font-size: 20px;
+  margin-left:20px;
+}
+nav ul li:hover a{
+  text-decoration: none;
+  color: #591BC5;;
+}
+nav ul li:hover{
+  height: 45px;
+  padding-top: 30px;
+  margin-top: -30px;
+ background: #EFEEF5;
+  text-decoration: none;
+  transform: skew(15deg);
+}
+/* Logo */
+.logo{
+  width: 50px;
+  height: 50px;
+  background: #EFEEF5;
+  margin: 40px 63px;
+  float: left;
+  transform: rotate(-30deg);
+}
+.logo span{
+  color: #591BC5;
+  font-size: 3em;
+  line-height: 1.4;
+  padding-left: 5px;
+  font-weight: bold;
+}
+/* Header content & title & button*/
+.header-content{
+  margin-top:20%;
+  text-align: center;
+  color:  #EFEEF5;
+}
+.header-content h1{
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 1px;
+}
+.header-content p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 20px auto;
+}
+.header-content button{
+  width: 140px;
+  margin:20px 10px;
+  color: #591BC5;
+  font-size: 17px;
+  border:1px solid #EFEEF5;
+  font-weight: 500;
+  background: #EFEEF5;
+  border-radius: 20px;
+  padding: 10px;
+  cursor:pointer;
+  transition: .3s;
+}
+.header-content button:hover{
+  border-radius: 0;
+}
+/* Animate Background*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
